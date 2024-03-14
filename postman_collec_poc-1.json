@@ -1,0 +1,737 @@
+{
+	"info": {
+		"_postman_id": "18e72597-0a0d-4985-be00-128a6c230b47",
+		"name": "Poc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6750365"
+	},
+	"item": [
+		{
+			"name": "scatter-gather",
+			"item": [
+				{
+					"name": "scatter-gather",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/scatter-gather",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"scatter-gather"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "objectStore",
+			"item": [
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"message\": \"Hello worldqwqwqwq!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/store",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "retrieve",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/retrieve?key=message",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"retrieve"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "message"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contains",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/contains?key=message",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"contains"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "message"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/remove?key=message",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"remove"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "message"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clear",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/clear",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "retrieveAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/retrieveAll",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"retrieveAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "retrieveAllKeys",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/retrieveAllKeys",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"retrieveAllKeys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "catch-config",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"keyName\": \"abc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/catch-config",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"catch-config"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BatchCase",
+			"item": [
+				{
+					"name": "BatchCase",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase0",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase2",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase3",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase4",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase5",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase6",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase6",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase7",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase7",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase8",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase8",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase9",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase9",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase10",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase10",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase11",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase11",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase12",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase12",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase13",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase13",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase14",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase14",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase15",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase15",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase16",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase16",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase17",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase17",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase18",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase18",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase19",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase19",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase20",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase20",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase21",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase21",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase22",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase22",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase23",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase23",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase23"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase24",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase24",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase24"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BatchCase26",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/BatchCase26",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"BatchCase26"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ForEach",
+			"item": [
+				{
+					"name": "forEach-10",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/forEach-10",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"forEach-10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Parallel ForEach",
+			"item": [
+				{
+					"name": "ParallelforEach-7",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/ParallelforEach-7",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"ParallelforEach-7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
